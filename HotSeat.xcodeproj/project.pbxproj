@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0A0A80BC89D4F5CBBAFA85B /* Pods_HotSeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABB495AA23C3D1C278AA4B /* Pods_HotSeat.framework */; };
 		FD7F7AD6224C391A005CF0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */; };
 		FD7F7AD8224C391A005CF0FC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AD7224C391A005CF0FC /* FirstViewController.swift */; };
 		FD7F7ADA224C391A005CF0FC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AD9224C391A005CF0FC /* SecondViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06D35959BEA1A628BB1DF187 /* Pods-HotSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotSeat/Pods-HotSeat.debug.xcconfig"; sourceTree = "<group>"; };
+		32F68696ACCE296E0C6BA328 /* Pods-HotSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotSeat/Pods-HotSeat.release.xcconfig"; sourceTree = "<group>"; };
+		D3ABB495AA23C3D1C278AA4B /* Pods_HotSeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7F7AD2224C391A005CF0FC /* HotSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD7F7AD7224C391A005CF0FC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A0A80BC89D4F5CBBAFA85B /* Pods_HotSeat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73889A6D6F5D67F387B623C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3ABB495AA23C3D1C278AA4B /* Pods_HotSeat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BB060A3A9F62DB2E92DAAFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06D35959BEA1A628BB1DF187 /* Pods-HotSeat.debug.xcconfig */,
+				32F68696ACCE296E0C6BA328 /* Pods-HotSeat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FD7F7AC9224C391A005CF0FC = {
 			isa = PBXGroup;
 			children = (
 				FD7F7AD4224C391A005CF0FC /* HotSeat */,
 				FD7F7AD3224C391A005CF0FC /* Products */,
+				9BB060A3A9F62DB2E92DAAFB /* Pods */,
+				73889A6D6F5D67F387B623C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD7F7AE6224C391C005CF0FC /* Build configuration list for PBXNativeTarget "HotSeat" */;
 			buildPhases = (
+				A0D37003FE4D451716CAC199 /* [CP] Check Pods Manifest.lock */,
 				FD7F7ACE224C391A005CF0FC /* Sources */,
 				FD7F7ACF224C391A005CF0FC /* Frameworks */,
 				FD7F7AD0224C391A005CF0FC /* Resources */,
@@ -132,6 +157,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0D37003FE4D451716CAC199 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HotSeat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD7F7ACE224C391A005CF0FC /* Sources */ = {
@@ -284,6 +330,7 @@
 		};
 		FD7F7AE7224C391C005CF0FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D35959BEA1A628BB1DF187 /* Pods-HotSeat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -304,6 +351,7 @@
 		};
 		FD7F7AE8224C391C005CF0FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F68696ACCE296E0C6BA328 /* Pods-HotSeat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
