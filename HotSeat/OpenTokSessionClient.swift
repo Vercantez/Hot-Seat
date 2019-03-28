@@ -14,15 +14,15 @@ class OpenTokSessionClient {
     
     var session: OTSession
     var publisher: OTPublisher
-    var subscribers: [OTSubscriber] = []
+    var subscribers: [IndexPath: OTSubscriber] = [:]
     var delegate: UIViewController
     
     init(sessionId: String, delegate: UIViewController) {
         self.delegate = delegate
-        session = OTSession(apiKey: kApiKey, sessionId: sessionId, delegate: delegate as! OTSessionDelegate)!
+        session = OTSession(apiKey: kApiKey, sessionId: sessionId, delegate: (delegate as! OTSessionDelegate))!
         let settings = OTPublisherSettings()
         settings.name = UIDevice.current.name
-        publisher = OTPublisher(delegate: delegate as! OTPublisherKitDelegate, settings: settings)!
+        publisher = OTPublisher(delegate: (delegate as! OTPublisherKitDelegate), settings: settings)!
     }
     
     func doConnect(withToken token: String) {
@@ -47,17 +47,27 @@ class OpenTokSessionClient {
         defer {
             processError(error)
         }
-        guard let subscriber = OTSubscriber(stream: stream, delegate: delegate as? OTSubscriberKitDelegate)
-            else {
-                print("Error while subscribing")
-                return
+        guard let subscriber = OTSubscriber(stream: stream, delegate: delegate as? OTSubscriberKitDelegate) else {
+            print("Error while subscribing")
+            return
         }
+        let indexPath = IndexPath(item: subscribers.count, section: 0)
         session.subscribe(subscriber, error: &error)
-        subscribers.append(subscriber)
+        subscribers[indexPath] = subscriber
     }
     
     func cleanupSubscriber(_ stream: OTStream) {
-        subscribers = subscribers.filter { $0.stream?.streamId != stream.streamId }
+        let (index, _) = findSubscriber(byStreamId: stream.streamId)!
+        subscribers.removeValue(forKey: index)
+    }
+    
+    func findSubscriber(byStreamId id: String) -> (IndexPath, OTSubscriber)? {
+        for (_, entry) in subscribers.enumerated() {
+            if let stream = entry.value.stream, stream.streamId == id {
+                return (entry.key, entry.value)
+            }
+        }
+        return nil
     }
     
     private func processError(_ error: OTError?) {
