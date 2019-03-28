@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F76B689224D0E7400A79B63 /* SubscriberCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76B688224D0E7400A79B63 /* SubscriberCollectionCell.swift */; };
+		3F76B68E224D23D800A79B63 /* DatingRoomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76B68D224D23D800A79B63 /* DatingRoomLayout.swift */; };
 		A0A0A80BC89D4F5CBBAFA85B /* Pods_HotSeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABB495AA23C3D1C278AA4B /* Pods_HotSeat.framework */; };
 		FD7F7AD6224C391A005CF0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */; };
 		FD7F7AD8224C391A005CF0FC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AD7224C391A005CF0FC /* FirstViewController.swift */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		06D35959BEA1A628BB1DF187 /* Pods-HotSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotSeat/Pods-HotSeat.debug.xcconfig"; sourceTree = "<group>"; };
 		32F68696ACCE296E0C6BA328 /* Pods-HotSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotSeat/Pods-HotSeat.release.xcconfig"; sourceTree = "<group>"; };
+		3F76B688224D0E7400A79B63 /* SubscriberCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberCollectionCell.swift; sourceTree = "<group>"; };
+		3F76B68D224D23D800A79B63 /* DatingRoomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingRoomLayout.swift; sourceTree = "<group>"; };
 		D3ABB495AA23C3D1C278AA4B /* Pods_HotSeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7F7AD2224C391A005CF0FC /* HotSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F76B68A224D0E9600A79B63 /* SubscriberViewUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3F76B688224D0E7400A79B63 /* SubscriberCollectionCell.swift */,
+			);
+			path = SubscriberViewUIComponents;
+			sourceTree = "<group>";
+		};
 		73889A6D6F5D67F387B623C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +92,7 @@
 		FD7F7AD4224C391A005CF0FC /* HotSeat */ = {
 			isa = PBXGroup;
 			children = (
+				3F76B68A224D0E9600A79B63 /* SubscriberViewUIComponents */,
 				FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */,
 				FD7F7AD7224C391A005CF0FC /* FirstViewController.swift */,
 				FD7F7AD9224C391A005CF0FC /* DatingRoomViewController.swift */,
@@ -87,6 +100,7 @@
 				FD7F7ADE224C391C005CF0FC /* Assets.xcassets */,
 				FD7F7AE0224C391C005CF0FC /* LaunchScreen.storyboard */,
 				FD7F7AE3224C391C005CF0FC /* Info.plist */,
+				3F76B68D224D23D800A79B63 /* DatingRoomLayout.swift */,
 			);
 			path = HotSeat;
 			sourceTree = "<group>";
@@ -184,7 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F76B68E224D23D800A79B63 /* DatingRoomLayout.swift in Sources */,
 				FD7F7ADA224C391A005CF0FC /* DatingRoomViewController.swift in Sources */,
+				3F76B689224D0E7400A79B63 /* SubscriberCollectionCell.swift in Sources */,
 				FD7F7AD6224C391A005CF0FC /* AppDelegate.swift in Sources */,
 				FD7F7AD8224C391A005CF0FC /* FirstViewController.swift in Sources */,
 			);
