@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F76B689224D0E7400A79B63 /* SubscriberCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76B688224D0E7400A79B63 /* SubscriberCollectionCell.swift */; };
 		3F76B68E224D23D800A79B63 /* DatingRoomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76B68D224D23D800A79B63 /* DatingRoomLayout.swift */; };
+		3F76B690224D2FCD00A79B63 /* OpenTokSessionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F76B68F224D2FCD00A79B63 /* OpenTokSessionClient.swift */; };
 		A0A0A80BC89D4F5CBBAFA85B /* Pods_HotSeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3ABB495AA23C3D1C278AA4B /* Pods_HotSeat.framework */; };
 		FD7F7AD6224C391A005CF0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */; };
 		FD7F7AD8224C391A005CF0FC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AD7224C391A005CF0FC /* FirstViewController.swift */; };
@@ -23,6 +24,7 @@
 		32F68696ACCE296E0C6BA328 /* Pods-HotSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotSeat/Pods-HotSeat.release.xcconfig"; sourceTree = "<group>"; };
 		3F76B688224D0E7400A79B63 /* SubscriberCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriberCollectionCell.swift; sourceTree = "<group>"; };
 		3F76B68D224D23D800A79B63 /* DatingRoomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatingRoomLayout.swift; sourceTree = "<group>"; };
+		3F76B68F224D2FCD00A79B63 /* OpenTokSessionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTokSessionClient.swift; sourceTree = "<group>"; };
 		D3ABB495AA23C3D1C278AA4B /* Pods_HotSeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7F7AD2224C391A005CF0FC /* HotSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				FD7F7AE0224C391C005CF0FC /* LaunchScreen.storyboard */,
 				FD7F7AE3224C391C005CF0FC /* Info.plist */,
 				3F76B68D224D23D800A79B63 /* DatingRoomLayout.swift */,
+				3F76B68F224D2FCD00A79B63 /* OpenTokSessionClient.swift */,
 			);
 			path = HotSeat;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				3F76B68E224D23D800A79B63 /* DatingRoomLayout.swift in Sources */,
 				FD7F7ADA224C391A005CF0FC /* DatingRoomViewController.swift in Sources */,
 				3F76B689224D0E7400A79B63 /* SubscriberCollectionCell.swift in Sources */,
+				3F76B690224D2FCD00A79B63 /* OpenTokSessionClient.swift in Sources */,
 				FD7F7AD6224C391A005CF0FC /* AppDelegate.swift in Sources */,
 				FD7F7AD8224C391A005CF0FC /* FirstViewController.swift in Sources */,
 			);
