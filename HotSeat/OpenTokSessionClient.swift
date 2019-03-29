@@ -70,6 +70,12 @@ class OpenTokSessionClient {
         return nil
     }
     
+    func sendSignal(withType: String) {
+        // pass in "right" or "left"
+        var error: OTError?
+        session.signal(withType: withType, string: "", connection: nil, error: &error)
+    }
+    
     private func processError(_ error: OTError?) {
         if let err = error {
             showAlert(errorStr: err.localizedDescription)

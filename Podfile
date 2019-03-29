@@ -6,13 +6,5 @@ target 'HotSeat' do
   use_frameworks!
 
   # Pods for HotSeat
-  pod 'collection-view-layouts/Core'
-  pod 'collection-view-layouts/TagsLayout'
-  pod 'collection-view-layouts/PinterestLayout'
-  pod 'collection-view-layouts/Px500Layout'
-  pod 'collection-view-layouts/InstagramLayout'
-  pod 'collection-view-layouts/FlipboardLayout'
-  pod 'collection-view-layouts/FacebookLayout'
-  pod 'collection-view-layouts/FlickrLayout'
   pod 'OpenTok'
 end
