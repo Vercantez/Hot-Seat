@@ -162,6 +162,14 @@ extension ChatRoomViewController: OTSessionDelegate {
     func session(_ session: OTSession, didFailWithError error: OTError) {
         print("session Failed to connect: \(error.localizedDescription)")
     }
+    
+    func session(_ session: OTSession, receivedSignalType type: String?, from connection: OTConnection?, with string: String?) {
+        if type == "right" {
+            // swipe right
+        } else {
+            // swipe left
+        }
+    }
 }
 
 extension ChatRoomViewController: OTPublisherDelegate {
