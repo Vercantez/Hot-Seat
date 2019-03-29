@@ -26,6 +26,10 @@ class CardsDataSource: NSObject, UICollectionViewDataSource {
         cell.backgroundColor = .green
         if let streamView = cards[indexPath.row]?.view {
             streamView.frame = cell.bounds
+            let overlayimg = UIImage(named: "Streamoverlay-Rahim")
+            let overlayview = UIImageView(image: overlayimg)
+            overlayview.frame = cell.bounds
+            streamView.addSubview(overlayview)
             cell.addSubview(streamView)
         }
         return cell
