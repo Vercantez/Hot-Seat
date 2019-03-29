@@ -20,7 +20,7 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     let chatDataSource = ChatViewDataSource()
     let cardsDataSource = CardsDataSource()
     
-    let USER_NAME = "RAHIM" //change to RAHIM
+    let USER_NAME = "SHAR" //change to RAHIM/SHAR
     
     var openTokServiceClient: OpenTokSessionClient?
     // Ideally should be obtained from server.
@@ -59,11 +59,6 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
         
         self.cardsCollectionView.dataSource = self.cardsDataSource
         self.cardsDataSource.cards.append(nil)
-        self.cardsDataSource.cards.append(nil)
-        self.cardsDataSource.cards.append(nil)
-
-        self.cardsDataSource.cards.append(nil)
-
         self.cardsDataSource.cards.append(nil)
 
         //self.cardsCollectionView.insertItems(at: [IndexPath(item: 0, section: 0)])
@@ -267,7 +262,7 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
 
 }
 
-var subbed = false
+var subbed = true
 
 extension ChatRoomViewController: OTSessionDelegate {
     func sessionDidConnect(_ session: OTSession) {
@@ -290,6 +285,14 @@ extension ChatRoomViewController: OTSessionDelegate {
             let subscriber = openTokServiceClient?.findSubscriber(byStreamId: stream.streamId)
             self.cardsDataSource.cards.insert(subscriber!.1, at: 2)
             self.cardsCollectionView.insertItems(at: [IndexPath(item: 2, section: 0)])
+            
+            self.cardsDataSource.cards.insert(nil, at: 3)
+            self.cardsCollectionView.insertItems(at: [IndexPath(item: 3, section: 0)])
+            self.cardsDataSource.cards.insert(nil, at: 4)
+            self.cardsCollectionView.insertItems(at: [IndexPath(item: 4, section: 0)])
+            self.cardsDataSource.cards.insert(nil, at: 5)
+            self.cardsCollectionView.insertItems(at: [IndexPath(item: 5, section: 0)])
+
         }
         subbed = true
     }
