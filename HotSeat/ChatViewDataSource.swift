@@ -25,5 +25,4 @@ class ChatViewDataSource: NSObject, UICollectionViewDataSource {
         cell.backgroundColor = .darkGray
         return cell
     }
-    
 }

@@ -19,4 +19,5 @@ class SubscriberCollectionCell: UICollectionViewCell {
             contentView.insertSubview(subView, belowSubview: UIView())
         }
     }
+    @IBOutlet weak var loadingAnimation: UIView!
 }
