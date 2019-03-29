@@ -20,7 +20,7 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     let chatDataSource = ChatViewDataSource()
     let cardsDataSource = CardsDataSource()
     
-    let USER_NAME = "SHAR" //change to RAHIM
+    let USER_NAME = "RAHIM" //change to RAHIM
     
     var openTokServiceClient: OpenTokSessionClient?
     // Ideally should be obtained from server.
@@ -267,6 +267,8 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
 
 }
 
+var subbed = false
+
 extension ChatRoomViewController: OTSessionDelegate {
     func sessionDidConnect(_ session: OTSession) {
         print("Session connected")
@@ -282,11 +284,14 @@ extension ChatRoomViewController: OTSessionDelegate {
     }
     
     func session(_ session: OTSession, streamCreated stream: OTStream) {
-        print("Session streamCreated: \(stream.streamId)")
-        openTokServiceClient?.doSubscribe(stream)
-        let subscriber = openTokServiceClient?.findSubscriber(byStreamId: stream.streamId)
-        self.cardsDataSource.cards.append(subscriber!.1)
-        self.cardsCollectionView.insertItems(at: [IndexPath(item: 2, section: 0)])
+        if subbed {
+            print("Session streamCreated: \(stream.streamId)")
+            openTokServiceClient?.doSubscribe(stream)
+            let subscriber = openTokServiceClient?.findSubscriber(byStreamId: stream.streamId)
+            self.cardsDataSource.cards.insert(subscriber!.1, at: 2)
+            self.cardsCollectionView.insertItems(at: [IndexPath(item: 2, section: 0)])
+        }
+        subbed = true
     }
     
     func session(_ session: OTSession, streamDestroyed stream: OTStream) {
