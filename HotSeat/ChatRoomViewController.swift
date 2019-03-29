@@ -126,7 +126,8 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     var currentIndex = 0
     @IBAction func tap() {
         chatTextField.resignFirstResponder()
-        let cardview = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex, section: 0))!
+        let cardview = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex, section: 0))! as! SubscriberCollectionCell
+        let nextCardView = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex + 1, section: 0))! as! SubscriberCollectionCell
         UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseInOut, animations: {
             cardview.frame.origin.x -= (cardview.frame.width) + 50
             cardview.transform = CGAffineTransform(rotationAngle: (-3.14159/18.0))
@@ -137,21 +138,21 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
             
             // Use UIBezierPath as an easy way to create the CGPath for the layer.
             // The path should be the entire circle.
-            let circlePath = UIBezierPath(arcCenter: CGPoint(x: cardview.frame.size.width / 2.0, y: cardview.frame.size.height / 2.0), radius: (cardview.frame.size.width - 10)/2, startAngle: 0.0, endAngle: CGFloat(M_PI * 2.0), clockwise: true)
+            let circlePath = UIBezierPath(arcCenter: CGPoint(x: nextCardView.loadingAnimation.frame.size.width / 2.0, y: nextCardView.loadingAnimation.frame.size.height / 2.0), radius: (nextCardView.loadingAnimation.frame.size.width - 10)/2, startAngle: 0.0, endAngle: CGFloat(M_PI * 2.0), clockwise: true)
             
             // Setup the CAShapeLayer with the path, colors, and line width
             let circleLayer = CAShapeLayer()
             circleLayer.path = circlePath.cgPath
             circleLayer.fillColor = UIColor.clear.cgColor
             circleLayer.strokeColor = UIColor.white.cgColor
-            circleLayer.lineWidth = 5.0;
+            circleLayer.lineWidth = 3.0;
             
             // Don't draw the circle initially
             circleLayer.strokeEnd = 0.0
             
             // Add the circleLayer to the view's layer's sublayers
-            cardview.layer.addSublayer(circleLayer)
-            cardview.transform = CGAffineTransform(rotationAngle: (-3.14159/2))
+            nextCardView.loadingAnimation.layer.addSublayer(circleLayer)
+            nextCardView.loadingAnimation.transform = CGAffineTransform(rotationAngle: (-3.14159/2))
             
             // We want to animate the strokeEnd property of the circleLayer
             let animation = CABasicAnimation(keyPath: "strokeEnd")
