@@ -208,12 +208,10 @@ extension ChatRoomViewController: OTSessionDelegate {
             pubView.frame = daterView.bounds
             daterView.addSubview(pubView)
         }
-        //reloadCollectionView()
     }
     
     func sessionDidDisconnect(_ session: OTSession) {
         print("Session disconnected")
-        //reloadCollectionView()
     }
     
     func session(_ session: OTSession, streamCreated stream: OTStream) {
@@ -222,13 +220,11 @@ extension ChatRoomViewController: OTSessionDelegate {
         let subscriber = openTokServiceClient?.findSubscriber(byStreamId: stream.streamId)
         self.cardsDataSource.cards.append(subscriber!.1)
         self.cardsCollectionView.insertItems(at: [IndexPath(item: 2, section: 0)])
-        //reloadCollectionView()
     }
     
     func session(_ session: OTSession, streamDestroyed stream: OTStream) {
         print("Session streamDestroyed: \(stream.streamId)")
         openTokServiceClient?.cleanupSubscriber(stream)
-        //reloadCollectionView()
     }
     
     func session(_ session: OTSession, didFailWithError error: OTError) {
@@ -261,7 +257,6 @@ extension ChatRoomViewController: OTPublisherDelegate {
 extension ChatRoomViewController: OTSubscriberDelegate {
     func subscriberDidConnect(toStream subscriberKit: OTSubscriberKit) {
         print("Subscriber connected")
-        //reloadCollectionView()
     }
     
     func subscriber(_ subscriber: OTSubscriberKit, didFailWithError error: OTError) {
