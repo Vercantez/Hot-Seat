@@ -51,21 +51,35 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
 
         self.chatCollectionView.layer.mask = maskLayer
 
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { (timer) in
-            self.chatDataSource.messages.insert("test", at: 0)
-            self.chatCollectionView.insertItems(at: [IndexPath(item: 0, section: 0)])
-
-        }
+        startChatScript(time: 0.5)
         
         self.cardsCollectionView.dataSource = self.cardsDataSource
         self.cardsDataSource.cards.append(nil)
         self.cardsDataSource.cards.append(nil)
+        self.cardsDataSource.cards.append(nil)
+
+        self.cardsDataSource.cards.append(nil)
+
+        self.cardsDataSource.cards.append(nil)
+
         //self.cardsCollectionView.insertItems(at: [IndexPath(item: 0, section: 0)])
         
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.keyboardNotification(notification:)),
                                                name: UIResponder.keyboardWillChangeFrameNotification,
                                                object: nil)
+    }
+    
+    func startChatScript(time: Double) {
+        let timer = Timer.scheduledTimer(withTimeInterval: time, repeats: false) { (timer) in
+            self.chatDataSource.messages.insert("test", at: 0)
+            self.chatCollectionView.insertItems(at: [IndexPath(item: 0, section: 0)])
+            
+            let interval = Double.random(in: 1.0..<4.0)
+            self.startChatScript(time: interval)
+
+        }
+        RunLoop.main.add(timer, forMode: .common)
     }
     
     func pageOffset(offset: CGPoint) -> CGPoint {
@@ -76,16 +90,11 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
         let newPoint = CGPoint(x: CGFloat(index * cardWidth), y: CGFloat(integerLiteral: 0))
         return newPoint
     }
-    
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        if !decelerate {
-            scrollView.setContentOffset(pageOffset(offset: scrollView.contentOffset), animated: true)
-        }
-    }
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        scrollView.setContentOffset(pageOffset(offset: scrollView.contentOffset), animated: true)
-    }
+
+//        if !decelerate {
+//            scrollView.setContentOffset(pageOffset(offset: scrollView.contentOffset), animated: true)
+
+
     
     deinit {
         NotificationCenter.default.removeObserver(self)
@@ -114,8 +123,63 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
         }
     }
     
+    var currentIndex = 0
     @IBAction func tap() {
         chatTextField.resignFirstResponder()
+        let cardview = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex, section: 0))!
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseInOut, animations: {
+//            cardview.frame.origin.x -= (cardview.frame.width) + 50
+//            cardview.transform = CGAffineTransform(rotationAngle: (-3.14159/18.0))
+
+        }) { (finished) in
+//            self.cardsCollectionView.scrollToItem(at: IndexPath(item: self.currentIndex + 1, section: 0), at: .centeredHorizontally, animated: true)
+//            self.currentIndex += 1
+            
+            // Use UIBezierPath as an easy way to create the CGPath for the layer.
+            // The path should be the entire circle.
+            let circlePath = UIBezierPath(arcCenter: CGPoint(x: cardview.frame.size.width / 2.0, y: cardview.frame.size.height / 2.0), radius: (cardview.frame.size.width - 10)/2, startAngle: 0.0, endAngle: CGFloat(M_PI * 2.0), clockwise: true)
+            
+            // Setup the CAShapeLayer with the path, colors, and line width
+            let circleLayer = CAShapeLayer()
+            circleLayer.path = circlePath.cgPath
+            circleLayer.fillColor = UIColor.clear.cgColor
+            circleLayer.strokeColor = UIColor.white.cgColor
+            circleLayer.lineWidth = 5.0;
+            
+            // Don't draw the circle initially
+            circleLayer.strokeEnd = 0.0
+            
+            // Add the circleLayer to the view's layer's sublayers
+            cardview.layer.addSublayer(circleLayer)
+            cardview.transform = CGAffineTransform(rotationAngle: (-3.14159/2))
+            
+            // We want to animate the strokeEnd property of the circleLayer
+            let animation = CABasicAnimation(keyPath: "strokeEnd")
+            
+            let duration = 3.0
+            // Set the animation duration appropriately
+            animation.duration = duration
+            
+            // Animate from 0 (no circle) to 1 (full circle)
+            animation.fromValue = 0
+            animation.toValue = 1
+            
+            // Do a linear animation (i.e. the speed of the animation stays the same)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+            
+            // Set the circleLayer's strokeEnd property to 1.0 now so that it's the
+            // right value when the animation ends.
+            circleLayer.strokeEnd = 1.0
+            
+            // Do the actual animation
+            circleLayer.add(animation, forKey: "animateCircle")
+
+
+
+            //self.cardsDataSource.cards.removeFirst()
+            //self.cardsCollectionView.deleteItems(at: [IndexPath(item: 0, section: 0)])
+        }
+
     }
     
 
