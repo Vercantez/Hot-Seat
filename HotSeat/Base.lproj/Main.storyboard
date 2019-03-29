@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5zF-Av-2WI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5zF-Av-2WI">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -81,13 +81,13 @@
                                 <rect key="frame" x="0.0" y="664" width="375" height="64"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu5-hy-a3C">
-                                        <rect key="frame" x="0.0" y="0.0" width="1824" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="608" height="64"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GLm-xO-IIR">
-                                                <rect key="frame" x="0.0" y="0.0" width="1824" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="608" height="64"/>
                                                 <subviews>
                                                     <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat-input" translatesAutoresizingMaskIntoConstraints="NO" id="OAi-Oa-OHB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1824" height="64"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="608" height="64"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </imageView>
                                                 </subviews>
@@ -119,6 +119,12 @@
                                     <constraint firstAttribute="height" constant="64" id="yLI-oD-ugW"/>
                                 </constraints>
                             </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat-scrimbehindchat" translatesAutoresizingMaskIntoConstraints="NO" id="k57-dL-JBY">
+                                <rect key="frame" x="0.0" y="464" width="375" height="264"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="264" id="LrL-uq-g5t"/>
+                                </constraints>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A3d-wc-Cmk">
                                 <rect key="frame" x="20" y="361" width="220" height="295"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,6 +170,12 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Pass" image="btn-pass"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Streamoverlay-dater" translatesAutoresizingMaskIntoConstraints="NO" id="cvk-e8-xHa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="Jeb-dv-qEV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -172,15 +184,23 @@
                             <constraint firstItem="PrS-LO-sXd" firstAttribute="top" secondItem="5Zz-HY-mbx" secondAttribute="bottom" id="50w-F3-ihp"/>
                             <constraint firstItem="hDH-9S-62B" firstAttribute="top" secondItem="9g3-vL-nF7" secondAttribute="top" id="5l1-C9-0fK"/>
                             <constraint firstItem="5Zz-HY-mbx" firstAttribute="top" secondItem="A3d-wc-Cmk" secondAttribute="bottom" constant="8" id="9Yr-6l-yQ8"/>
+                            <constraint firstItem="k57-dL-JBY" firstAttribute="trailing" secondItem="hCz-sw-51V" secondAttribute="trailing" id="C6r-Em-EhR"/>
                             <constraint firstItem="5Zz-HY-mbx" firstAttribute="top" secondItem="ZA9-Gk-Rws" secondAttribute="bottom" constant="8" id="Epk-hs-J3S"/>
                             <constraint firstItem="PrS-LO-sXd" firstAttribute="trailing" secondItem="9g3-vL-nF7" secondAttribute="trailing" id="FQU-B6-rG9"/>
+                            <constraint firstItem="k57-dL-JBY" firstAttribute="leading" secondItem="hCz-sw-51V" secondAttribute="leading" id="FfK-1c-Rd2"/>
                             <constraint firstItem="5Zz-HY-mbx" firstAttribute="trailing" secondItem="hCz-sw-51V" secondAttribute="trailing" id="Gfu-2v-3s1"/>
                             <constraint firstItem="hCz-sw-51V" firstAttribute="bottom" secondItem="5Zz-HY-mbx" secondAttribute="bottom" constant="50" id="K2s-Kx-OZx"/>
                             <constraint firstItem="ZA9-Gk-Rws" firstAttribute="top" secondItem="hDH-9S-62B" secondAttribute="bottom" constant="20" id="LFz-Rt-BZc"/>
+                            <constraint firstItem="cvk-e8-xHa" firstAttribute="leading" secondItem="hCz-sw-51V" secondAttribute="leading" id="Ple-hL-oJ8"/>
                             <constraint firstItem="VYX-ax-HEL" firstAttribute="top" secondItem="5Zz-HY-mbx" secondAttribute="bottom" id="QgH-sV-kZA"/>
+                            <constraint firstItem="k57-dL-JBY" firstAttribute="leading" secondItem="hCz-sw-51V" secondAttribute="leading" id="Rom-jC-1zh"/>
                             <constraint firstItem="hDH-9S-62B" firstAttribute="trailing" secondItem="hCz-sw-51V" secondAttribute="trailing" id="Wvo-fv-yVi"/>
+                            <constraint firstItem="k57-dL-JBY" firstAttribute="trailing" secondItem="hCz-sw-51V" secondAttribute="trailing" id="XTy-pf-kRt"/>
+                            <constraint firstItem="cvk-e8-xHa" firstAttribute="top" secondItem="9g3-vL-nF7" secondAttribute="top" id="Y1N-bs-mHu"/>
                             <constraint firstItem="hDH-9S-62B" firstAttribute="leading" secondItem="hCz-sw-51V" secondAttribute="leading" id="Yeo-ZN-Imp"/>
+                            <constraint firstItem="hCz-sw-51V" firstAttribute="bottom" secondItem="k57-dL-JBY" secondAttribute="bottom" constant="50" id="ZM4-BV-AXh"/>
                             <constraint firstItem="PrS-LO-sXd" firstAttribute="leading" secondItem="VYX-ax-HEL" secondAttribute="trailing" id="eDM-5s-9fR"/>
+                            <constraint firstItem="cvk-e8-xHa" firstAttribute="trailing" secondItem="hCz-sw-51V" secondAttribute="trailing" id="gJp-RN-eoh"/>
                             <constraint firstItem="PrS-LO-sXd" firstAttribute="width" secondItem="hCz-sw-51V" secondAttribute="width" multiplier="0.5" id="gqF-4E-mv0"/>
                             <constraint firstItem="ZA9-Gk-Rws" firstAttribute="leading" secondItem="hCz-sw-51V" secondAttribute="leading" id="jUX-UA-sUY"/>
                             <constraint firstItem="VYX-ax-HEL" firstAttribute="leading" secondItem="9g3-vL-nF7" secondAttribute="leading" id="l7k-ur-ed3"/>
@@ -216,8 +236,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Streamoverlay-dater" width="1125" height="840"/>
         <image name="btn-pass" width="564" height="252"/>
         <image name="btn-pick" width="564" height="252"/>
-        <image name="chat-input" width="1824" height="192"/>
+        <image name="chat-input" width="608" height="64"/>
+        <image name="chat-scrimbehindchat" width="1125" height="792"/>
     </resources>
 </document>
