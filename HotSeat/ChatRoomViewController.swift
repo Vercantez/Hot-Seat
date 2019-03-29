@@ -14,6 +14,7 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet var chatCollectionView: UICollectionView!
     @IBOutlet var cardsCollectionView: UICollectionView!
     @IBOutlet var chatTextField: UITextField!
+    @IBOutlet var daterView: UIView!
     let chatDataSource = ChatViewDataSource()
     let cardsDataSource = CardsDataSource()
     
@@ -57,8 +58,8 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
         }
         
         self.cardsCollectionView.dataSource = self.cardsDataSource
-        self.cardsDataSource.cards.append("test card")
-        self.cardsDataSource.cards.append("test card")
+        self.cardsDataSource.cards.append(nil)
+        self.cardsDataSource.cards.append(nil)
         //self.cardsCollectionView.insertItems(at: [IndexPath(item: 0, section: 0)])
         
         NotificationCenter.default.addObserver(self,
@@ -135,8 +136,8 @@ extension ChatRoomViewController: OTSessionDelegate {
         print("Session connected")
         openTokServiceClient?.doPublish()
         if let pubView = openTokServiceClient?.publisher.view {
-            //pubView.frame = daterVideoArea.bounds
-            //daterVideoArea.addSubview(pubView)
+            pubView.frame = daterView.bounds
+            daterView.addSubview(pubView)
         }
         //reloadCollectionView()
     }
@@ -150,6 +151,8 @@ extension ChatRoomViewController: OTSessionDelegate {
         print("Session streamCreated: \(stream.streamId)")
         openTokServiceClient?.doSubscribe(stream)
         let subscriber = openTokServiceClient?.findSubscriber(byStreamId: stream.streamId)
+        self.cardsDataSource.cards.append(subscriber!.1)
+        self.cardsCollectionView.insertItems(at: [IndexPath(item: 2, section: 0)])
         //reloadCollectionView()
     }
     
