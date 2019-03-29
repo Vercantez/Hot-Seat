@@ -22,7 +22,13 @@ class ChatViewDataSource: NSObject, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        cell.backgroundColor = .darkGray
+        if cell.subviews.count < 2 {
+            let cardImg = UIImage(named: "chat\((messages.count - 1) % 8)")
+            let imgView = UIImageView(image: cardImg)
+            imgView.transform = CGAffineTransform(scaleX: 1, y: -1)
+            cell.addSubview(imgView)
+        }
         return cell
     }
+    
 }
