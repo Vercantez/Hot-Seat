@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HotSeat/ChatRoomViewController.swift"
-            timestampString = "575503902.299239"
+            timestampString = "575507115.805233"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "keyboardNotification(notification:)"
             landmarkType = "7">
          </BreakpointContent>

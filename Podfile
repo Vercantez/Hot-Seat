@@ -14,5 +14,5 @@ target 'HotSeat' do
   pod 'collection-view-layouts/FlipboardLayout'
   pod 'collection-view-layouts/FacebookLayout'
   pod 'collection-view-layouts/FlickrLayout'
-
+  pod 'OpenTok'
 end

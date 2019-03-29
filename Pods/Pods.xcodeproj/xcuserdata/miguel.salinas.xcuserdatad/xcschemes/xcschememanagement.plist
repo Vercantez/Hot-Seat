@@ -4,12 +4,19 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-HotSeat.xcscheme</key>
+		<key>OpenTok.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>Pods-HotSeat.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>collection-view-layouts.xcscheme</key>
 		<dict>

@@ -6,26 +6,45 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0780714244EB54F6E26EDDEECF729EAD /* OpenTok */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 08B04A48A585BACC18468FDAEB18C30B /* Build configuration list for PBXAggregateTarget "OpenTok" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = OpenTok;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		1B37DFF5AEE00D00933964389498E3D9 /* Pods-HotSeat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AAECE7B9C2C674F0895A75C499A30 /* Pods-HotSeat-dummy.m */; };
-		49FAED48073BD2E0D8FCC9A6B6841C44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		591F4C413CD810DE8F9E0CFB35BBF6C8 /* ContentDynamicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6034279E86F3C3E73274F2BE4B9ED9 /* ContentDynamicLayout.swift */; };
-		7C4F0F88F74DF6EC62C16DB12F67CF5B /* collection-view-layouts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CDFE630E78287C6CAFCF8854AD91A63 /* collection-view-layouts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90D667D07FED28F0A80795F9B7B8A25F /* InstagramStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6E0C82AA7D345D38EA77BB2CB7F5B0 /* InstagramStyleFlowLayout.swift */; };
-		9DA7396FC0AE8F99CC16FD7CB0488AF6 /* TagsStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC1CC85C2B4AB0F9499D331AA9A7142 /* TagsStyleFlowLayout.swift */; };
-		AFB001C83C642C8BBCF3A7235BE9236F /* Px500StyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBFA3454B7DA7D41C02D8E35D1D71E2 /* Px500StyleFlowLayout.swift */; };
-		B189832D454ADE657564AE991BC2ABAC /* FlickrStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8940BF7B59524F6039CBB57AA88CFD /* FlickrStyleFlowLayout.swift */; };
-		BE4E75AE6CFAA6622C5D71AA929BF56B /* FlipboardStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5551190EB5D2C0E8AB5C3C4C504A669 /* FlipboardStyleFlowLayout.swift */; };
-		D2A3A41543DAB822B1C46BCB536E142C /* collection-view-layouts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D41C000F6647E71560E2BF9B99B2CEA /* collection-view-layouts-dummy.m */; };
-		DE75DAB33D671459D807E6575D6BB1DB /* FacebookStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C367003108E6B71DD7B00C31C12D546C /* FacebookStyleFlowLayout.swift */; };
+		2EC0C05EAAEEBB9DF6E581F5BEF8AD99 /* Pods-HotSeat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB02EF0A4B256C7F41ABA9375470EF85 /* Pods-HotSeat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		591F4C413CD810DE8F9E0CFB35BBF6C8 /* ContentDynamicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C8BACB50DF161FDA652672E72D47E3 /* ContentDynamicLayout.swift */; };
+		7C4F0F88F74DF6EC62C16DB12F67CF5B /* collection-view-layouts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1491B0A12652F17EC7C0B50E11A30AEA /* collection-view-layouts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90D667D07FED28F0A80795F9B7B8A25F /* InstagramStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1937B51B23352440223BEE700E4C594B /* InstagramStyleFlowLayout.swift */; };
+		96C01866824C1F1182A89E4AB5488DAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		9DA7396FC0AE8F99CC16FD7CB0488AF6 /* TagsStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12737D1A90692599FA7752682F2F2662 /* TagsStyleFlowLayout.swift */; };
+		AFB001C83C642C8BBCF3A7235BE9236F /* Px500StyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643A37DD9724B64AF8F6B3BF0EE6F805 /* Px500StyleFlowLayout.swift */; };
+		B189832D454ADE657564AE991BC2ABAC /* FlickrStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276CB9FA020AEB1E4BF78D88036A44F /* FlickrStyleFlowLayout.swift */; };
+		BE4E75AE6CFAA6622C5D71AA929BF56B /* FlipboardStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995B3A46674786FFDF39B5B9BA9D05F /* FlipboardStyleFlowLayout.swift */; };
+		D2A3A41543DAB822B1C46BCB536E142C /* collection-view-layouts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 502BB6B2D9E899779878B587A9F18799 /* collection-view-layouts-dummy.m */; };
+		DE75DAB33D671459D807E6575D6BB1DB /* FacebookStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9408E07EDB9CBC35C0C46CB4D30FAB0E /* FacebookStyleFlowLayout.swift */; };
 		E0BB1A873E69571FD0DBC35F305F763B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		E66D676DE955ED13943166D510A755EA /* Pods-HotSeat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB02EF0A4B256C7F41ABA9375470EF85 /* Pods-HotSeat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAF59954749D615EE4B8E0A93FCA556E /* PinterestStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D82725E0B66B049D8CF1E81E3D8E8 /* PinterestStyleFlowLayout.swift */; };
+		F0DCFE8E9237EE3C4D06D8A6DC6261EB /* Pods-HotSeat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F25AAECE7B9C2C674F0895A75C499A30 /* Pods-HotSeat-dummy.m */; };
+		FAF59954749D615EE4B8E0A93FCA556E /* PinterestStyleFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC1F668033D660FEC13A322329F5801 /* PinterestStyleFlowLayout.swift */; };
 		FFC5C27AFAE70A10D075B42FFD7414D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD6C888E11430D79FD57B5F9BFE06A37 /* PBXContainerItemProxy */ = {
+		26FBB0267AF50B3B19B66A0366B03D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0780714244EB54F6E26EDDEECF729EAD;
+			remoteInfo = OpenTok;
+		};
+		DBF5B3A086545C9299C0C9919248431C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,31 +54,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		095647861503A3E0DB3C6909873DBDB4 /* collection-view-layouts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "collection-view-layouts.modulemap"; sourceTree = "<group>"; };
+		02820B33697E982C098C600D72D0CA61 /* collection-view-layouts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "collection-view-layouts-prefix.pch"; sourceTree = "<group>"; };
 		09F91F1C899A38244FCA8CD415A3C583 /* Pods-HotSeat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HotSeat-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0C8940BF7B59524F6039CBB57AA88CFD /* FlickrStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlickrStyleFlowLayout.swift; path = "collection-view-layouts/Classes/FlickrStyleFlowLayout/FlickrStyleFlowLayout.swift"; sourceTree = "<group>"; };
-		0CC1CC85C2B4AB0F9499D331AA9A7142 /* TagsStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagsStyleFlowLayout.swift; path = "collection-view-layouts/Classes/TagsStyleFlowLayout/TagsStyleFlowLayout.swift"; sourceTree = "<group>"; };
-		0F8C13DE49711635BD7E3214C424DA1E /* collection-view-layouts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "collection-view-layouts.xcconfig"; sourceTree = "<group>"; };
+		12737D1A90692599FA7752682F2F2662 /* TagsStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagsStyleFlowLayout.swift; path = "collection-view-layouts/Classes/TagsStyleFlowLayout/TagsStyleFlowLayout.swift"; sourceTree = "<group>"; };
+		1491B0A12652F17EC7C0B50E11A30AEA /* collection-view-layouts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "collection-view-layouts-umbrella.h"; sourceTree = "<group>"; };
 		1770CA08E60952D9BE72F6E2FDCF498B /* Pods-HotSeat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HotSeat-acknowledgements.plist"; sourceTree = "<group>"; };
 		192F09B219B18C4BEA810ED16CB4DFF8 /* Pods-HotSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HotSeat.release.xcconfig"; sourceTree = "<group>"; };
+		1937B51B23352440223BEE700E4C594B /* InstagramStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstagramStyleFlowLayout.swift; path = "collection-view-layouts/Classes/InstagramStyleFlowLayout/InstagramStyleFlowLayout.swift"; sourceTree = "<group>"; };
+		21C8BACB50DF161FDA652672E72D47E3 /* ContentDynamicLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentDynamicLayout.swift; path = "collection-view-layouts/Classes/Core/ContentDynamicLayout.swift"; sourceTree = "<group>"; };
+		2C42333DA8491B27ED5D8E7C04CD5839 /* collection-view-layouts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "collection-view-layouts.xcconfig"; sourceTree = "<group>"; };
 		314EE341BE896F4CBB9C19AA945ECDEA /* Pods-HotSeat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HotSeat-Info.plist"; sourceTree = "<group>"; };
+		3276CB9FA020AEB1E4BF78D88036A44F /* FlickrStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlickrStyleFlowLayout.swift; path = "collection-view-layouts/Classes/FlickrStyleFlowLayout/FlickrStyleFlowLayout.swift"; sourceTree = "<group>"; };
+		38117A740E82771DCC631CA61CA1DD5F /* OpenTok.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenTok.xcconfig; sourceTree = "<group>"; };
+		3CC1F668033D660FEC13A322329F5801 /* PinterestStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinterestStyleFlowLayout.swift; path = "collection-view-layouts/Classes/PinterestStyleFlowLayout/PinterestStyleFlowLayout.swift"; sourceTree = "<group>"; };
 		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4701FFD99D10520D6437AD2EE90A0E7F /* Pods-HotSeat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HotSeat-frameworks.sh"; sourceTree = "<group>"; };
-		6CDFE630E78287C6CAFCF8854AD91A63 /* collection-view-layouts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "collection-view-layouts-umbrella.h"; sourceTree = "<group>"; };
-		6D41C000F6647E71560E2BF9B99B2CEA /* collection-view-layouts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "collection-view-layouts-dummy.m"; sourceTree = "<group>"; };
+		502BB6B2D9E899779878B587A9F18799 /* collection-view-layouts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "collection-view-layouts-dummy.m"; sourceTree = "<group>"; };
+		643A37DD9724B64AF8F6B3BF0EE6F805 /* Px500StyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Px500StyleFlowLayout.swift; path = "collection-view-layouts/Classes/Px500StyleFlowLayout/Px500StyleFlowLayout.swift"; sourceTree = "<group>"; };
 		7B70168619972562899B5D88977106D5 /* Pods-HotSeat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HotSeat.modulemap"; sourceTree = "<group>"; };
-		8BBFA3454B7DA7D41C02D8E35D1D71E2 /* Px500StyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Px500StyleFlowLayout.swift; path = "collection-view-layouts/Classes/Px500StyleFlowLayout/Px500StyleFlowLayout.swift"; sourceTree = "<group>"; };
-		8E6E0C82AA7D345D38EA77BB2CB7F5B0 /* InstagramStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstagramStyleFlowLayout.swift; path = "collection-view-layouts/Classes/InstagramStyleFlowLayout/InstagramStyleFlowLayout.swift"; sourceTree = "<group>"; };
+		8995B3A46674786FFDF39B5B9BA9D05F /* FlipboardStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlipboardStyleFlowLayout.swift; path = "collection-view-layouts/Classes/FlipboardStyleFlowLayout/FlipboardStyleFlowLayout.swift"; sourceTree = "<group>"; };
+		89E3B6145632C4E3DEC937CC8E1584EE /* collection-view-layouts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "collection-view-layouts.modulemap"; sourceTree = "<group>"; };
+		9408E07EDB9CBC35C0C46CB4D30FAB0E /* FacebookStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookStyleFlowLayout.swift; path = "collection-view-layouts/Classes/FacebookStyleFlowLayout/FacebookStyleFlowLayout.swift"; sourceTree = "<group>"; };
+		940AC0B7533F7A20C741E4F2C618F2DF /* collection-view-layouts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "collection-view-layouts-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0EE56E5F3F9BDEEF7CB4C6E0DEFA9F7 /* collection_view_layouts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = collection_view_layouts.framework; path = "collection-view-layouts.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC6034279E86F3C3E73274F2BE4B9ED9 /* ContentDynamicLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentDynamicLayout.swift; path = "collection-view-layouts/Classes/Core/ContentDynamicLayout.swift"; sourceTree = "<group>"; };
+		A8A83250C2271B23E99A49667AFCC61D /* OpenTok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenTok.framework; sourceTree = "<group>"; };
 		BF5ABBC692FB8A9E8EC139E535E3CA25 /* Pods-HotSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HotSeat.debug.xcconfig"; sourceTree = "<group>"; };
-		C367003108E6B71DD7B00C31C12D546C /* FacebookStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FacebookStyleFlowLayout.swift; path = "collection-view-layouts/Classes/FacebookStyleFlowLayout/FacebookStyleFlowLayout.swift"; sourceTree = "<group>"; };
-		C5551190EB5D2C0E8AB5C3C4C504A669 /* FlipboardStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlipboardStyleFlowLayout.swift; path = "collection-view-layouts/Classes/FlipboardStyleFlowLayout/FlipboardStyleFlowLayout.swift"; sourceTree = "<group>"; };
 		CB02EF0A4B256C7F41ABA9375470EF85 /* Pods-HotSeat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HotSeat-umbrella.h"; sourceTree = "<group>"; };
-		CB8D82725E0B66B049D8CF1E81E3D8E8 /* PinterestStyleFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PinterestStyleFlowLayout.swift; path = "collection-view-layouts/Classes/PinterestStyleFlowLayout/PinterestStyleFlowLayout.swift"; sourceTree = "<group>"; };
-		CC554E8D1802A0FB57F751E587F26A64 /* collection-view-layouts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "collection-view-layouts-prefix.pch"; sourceTree = "<group>"; };
-		DFE8A149F0A22829D8E97B1120C7BE8D /* collection-view-layouts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "collection-view-layouts-Info.plist"; sourceTree = "<group>"; };
 		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F25AAECE7B9C2C674F0895A75C499A30 /* Pods-HotSeat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HotSeat-dummy.m"; sourceTree = "<group>"; };
 		FE6E366AF04CAF69FF90BDEAFE2FDDE0 /* Pods_HotSeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HotSeat.framework; path = "Pods-HotSeat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,11 +96,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A39521A634EDF75E94A9596DCB6DC52 /* Frameworks */ = {
+		E9D5CC417CB85C833A9A379AF44B748D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FAED48073BD2E0D8FCC9A6B6841C44 /* Foundation.framework in Frameworks */,
+				96C01866824C1F1182A89E4AB5488DAD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,53 +115,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1CA25582B7AEF5D655994637EC5D74B3 /* collection-view-layouts */ = {
+		190DD9CA3C26C551FE4E3C2FD6C2F9A4 /* FlickrLayout */ = {
 			isa = PBXGroup;
 			children = (
-				398F5FB28142895EB54303138498ABF0 /* Core */,
-				6B7F9F09538B5B102859D6C8FD7EC405 /* FacebookLayout */,
-				B13692DCA59FA9962BD59BD5E7AC883A /* FlickrLayout */,
-				37A9A06F847793C9954A3DA171FE019C /* FlipboardLayout */,
-				1D1A0027A8E535D37619728C8C9A32FC /* InstagramLayout */,
-				EA141321464C38D752F46878DDD9C709 /* PinterestLayout */,
-				2942E6A7E098ACC80656FC5A7F81F321 /* Px500Layout */,
-				4C5E969A247A1DB058F20B0926C7A1E7 /* Support Files */,
-				B23C0147BE8A6F350FF6877EB483C354 /* TagsLayout */,
+				3276CB9FA020AEB1E4BF78D88036A44F /* FlickrStyleFlowLayout.swift */,
 			);
-			name = "collection-view-layouts";
-			path = "collection-view-layouts";
+			name = FlickrLayout;
 			sourceTree = "<group>";
 		};
-		1D1A0027A8E535D37619728C8C9A32FC /* InstagramLayout */ = {
+		1C4C0932157449ABE101FC2840FDE208 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8E6E0C82AA7D345D38EA77BB2CB7F5B0 /* InstagramStyleFlowLayout.swift */,
+				A8A83250C2271B23E99A49667AFCC61D /* OpenTok.framework */,
 			);
-			name = InstagramLayout;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2942E6A7E098ACC80656FC5A7F81F321 /* Px500Layout */ = {
+		26A46414E74F23FBC825100D31672CAF /* FacebookLayout */ = {
 			isa = PBXGroup;
 			children = (
-				8BBFA3454B7DA7D41C02D8E35D1D71E2 /* Px500StyleFlowLayout.swift */,
+				9408E07EDB9CBC35C0C46CB4D30FAB0E /* FacebookStyleFlowLayout.swift */,
 			);
-			name = Px500Layout;
-			sourceTree = "<group>";
-		};
-		37A9A06F847793C9954A3DA171FE019C /* FlipboardLayout */ = {
-			isa = PBXGroup;
-			children = (
-				C5551190EB5D2C0E8AB5C3C4C504A669 /* FlipboardStyleFlowLayout.swift */,
-			);
-			name = FlipboardLayout;
-			sourceTree = "<group>";
-		};
-		398F5FB28142895EB54303138498ABF0 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				AC6034279E86F3C3E73274F2BE4B9ED9 /* ContentDynamicLayout.swift */,
-			);
-			name = Core;
+			name = FacebookLayout;
 			sourceTree = "<group>";
 		};
 		3FF56A729E4CB998E53D96783ED63F62 /* Targets Support Files */ = {
@@ -151,18 +147,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4C5E969A247A1DB058F20B0926C7A1E7 /* Support Files */ = {
+		45C7B525C298D2198390540FC2883234 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				095647861503A3E0DB3C6909873DBDB4 /* collection-view-layouts.modulemap */,
-				0F8C13DE49711635BD7E3214C424DA1E /* collection-view-layouts.xcconfig */,
-				6D41C000F6647E71560E2BF9B99B2CEA /* collection-view-layouts-dummy.m */,
-				DFE8A149F0A22829D8E97B1120C7BE8D /* collection-view-layouts-Info.plist */,
-				CC554E8D1802A0FB57F751E587F26A64 /* collection-view-layouts-prefix.pch */,
-				6CDFE630E78287C6CAFCF8854AD91A63 /* collection-view-layouts-umbrella.h */,
+				89E3B6145632C4E3DEC937CC8E1584EE /* collection-view-layouts.modulemap */,
+				2C42333DA8491B27ED5D8E7C04CD5839 /* collection-view-layouts.xcconfig */,
+				502BB6B2D9E899779878B587A9F18799 /* collection-view-layouts-dummy.m */,
+				940AC0B7533F7A20C741E4F2C618F2DF /* collection-view-layouts-Info.plist */,
+				02820B33697E982C098C600D72D0CA61 /* collection-view-layouts-prefix.pch */,
+				1491B0A12652F17EC7C0B50E11A30AEA /* collection-view-layouts-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/collection-view-layouts";
+			sourceTree = "<group>";
+		};
+		4CDA824D70D6225D809E2C20A36B23B4 /* collection-view-layouts */ = {
+			isa = PBXGroup;
+			children = (
+				E1003834458006AEE809A4AE0499C5DB /* Core */,
+				26A46414E74F23FBC825100D31672CAF /* FacebookLayout */,
+				190DD9CA3C26C551FE4E3C2FD6C2F9A4 /* FlickrLayout */,
+				6A6567DBB5CB1C846FB7C25C80ADD7D7 /* FlipboardLayout */,
+				CB9EF7634A406E5829065F042A98D519 /* InstagramLayout */,
+				C8A966667E9E277BC2055BA2CFC26DCF /* PinterestLayout */,
+				9317F78F9333837DE5C7D30B013A3807 /* Px500Layout */,
+				45C7B525C298D2198390540FC2883234 /* Support Files */,
+				BF282A772193D374267D841E6702E147 /* TagsLayout */,
+			);
+			name = "collection-view-layouts";
+			path = "collection-view-layouts";
 			sourceTree = "<group>";
 		};
 		5DAA9B1246CD6EFD945F308279138F38 /* Pods-HotSeat */ = {
@@ -191,28 +204,63 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B7F9F09538B5B102859D6C8FD7EC405 /* FacebookLayout */ = {
+		6A6567DBB5CB1C846FB7C25C80ADD7D7 /* FlipboardLayout */ = {
 			isa = PBXGroup;
 			children = (
-				C367003108E6B71DD7B00C31C12D546C /* FacebookStyleFlowLayout.swift */,
+				8995B3A46674786FFDF39B5B9BA9D05F /* FlipboardStyleFlowLayout.swift */,
 			);
-			name = FacebookLayout;
+			name = FlipboardLayout;
 			sourceTree = "<group>";
 		};
-		B13692DCA59FA9962BD59BD5E7AC883A /* FlickrLayout */ = {
+		80A7DEE465B772313AA05292240DE43B /* OpenTok */ = {
 			isa = PBXGroup;
 			children = (
-				0C8940BF7B59524F6039CBB57AA88CFD /* FlickrStyleFlowLayout.swift */,
+				1C4C0932157449ABE101FC2840FDE208 /* Frameworks */,
+				B78849B2AFEDABC91CB801E53103434F /* Support Files */,
 			);
-			name = FlickrLayout;
+			name = OpenTok;
+			path = OpenTok;
 			sourceTree = "<group>";
 		};
-		B23C0147BE8A6F350FF6877EB483C354 /* TagsLayout */ = {
+		9317F78F9333837DE5C7D30B013A3807 /* Px500Layout */ = {
 			isa = PBXGroup;
 			children = (
-				0CC1CC85C2B4AB0F9499D331AA9A7142 /* TagsStyleFlowLayout.swift */,
+				643A37DD9724B64AF8F6B3BF0EE6F805 /* Px500StyleFlowLayout.swift */,
+			);
+			name = Px500Layout;
+			sourceTree = "<group>";
+		};
+		B78849B2AFEDABC91CB801E53103434F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				38117A740E82771DCC631CA61CA1DD5F /* OpenTok.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpenTok";
+			sourceTree = "<group>";
+		};
+		BF282A772193D374267D841E6702E147 /* TagsLayout */ = {
+			isa = PBXGroup;
+			children = (
+				12737D1A90692599FA7752682F2F2662 /* TagsStyleFlowLayout.swift */,
 			);
 			name = TagsLayout;
+			sourceTree = "<group>";
+		};
+		C8A966667E9E277BC2055BA2CFC26DCF /* PinterestLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3CC1F668033D660FEC13A322329F5801 /* PinterestStyleFlowLayout.swift */,
+			);
+			name = PinterestLayout;
+			sourceTree = "<group>";
+		};
+		CB9EF7634A406E5829065F042A98D519 /* InstagramLayout */ = {
+			isa = PBXGroup;
+			children = (
+				1937B51B23352440223BEE700E4C594B /* InstagramStyleFlowLayout.swift */,
+			);
+			name = InstagramLayout;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -220,10 +268,18 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				E310CE04F592BAD6AF9EF336EEC5C5FA /* Pods */,
+				E6A6FFC2DAFD42D3EF209FEE980DF330 /* Pods */,
 				66926CD5D934EDC5603C746AF3443F36 /* Products */,
 				3FF56A729E4CB998E53D96783ED63F62 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		E1003834458006AEE809A4AE0499C5DB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				21C8BACB50DF161FDA652672E72D47E3 /* ContentDynamicLayout.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		E169A450ED27AC725DF52953F66D11E0 /* iOS */ = {
@@ -235,38 +291,31 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E310CE04F592BAD6AF9EF336EEC5C5FA /* Pods */ = {
+		E6A6FFC2DAFD42D3EF209FEE980DF330 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1CA25582B7AEF5D655994637EC5D74B3 /* collection-view-layouts */,
+				4CDA824D70D6225D809E2C20A36B23B4 /* collection-view-layouts */,
+				80A7DEE465B772313AA05292240DE43B /* OpenTok */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		EA141321464C38D752F46878DDD9C709 /* PinterestLayout */ = {
-			isa = PBXGroup;
-			children = (
-				CB8D82725E0B66B049D8CF1E81E3D8E8 /* PinterestStyleFlowLayout.swift */,
-			);
-			name = PinterestLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		8C8BC98D6FCA9611698AA28EE218C0E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC0C05EAAEEBB9DF6E581F5BEF8AD99 /* Pods-HotSeat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2E03D7F765A4EA6A595F0DF21ADA197 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7C4F0F88F74DF6EC62C16DB12F67CF5B /* collection-view-layouts-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D8A74EAB6B692A11A693A7B3E56B3FA5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E66D676DE955ED13943166D510A755EA /* Pods-HotSeat-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,19 +340,20 @@
 			productReference = A0EE56E5F3F9BDEEF7CB4C6E0DEFA9F7 /* collection_view_layouts.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		548E18E6F788725078FCD610927A72ED /* Pods-HotSeat */ = {
+		D8BA6D9D883B53883F59C4C9588240FE /* Pods-HotSeat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42E2029AC3A28A2DDCE085E6FAC3BD0A /* Build configuration list for PBXNativeTarget "Pods-HotSeat" */;
+			buildConfigurationList = C3A59C0C1D8D57D72683C7AFA8DB4986 /* Build configuration list for PBXNativeTarget "Pods-HotSeat" */;
 			buildPhases = (
-				D8A74EAB6B692A11A693A7B3E56B3FA5 /* Headers */,
-				280C782298A3EF2578AF1E918680EA3B /* Sources */,
-				9A39521A634EDF75E94A9596DCB6DC52 /* Frameworks */,
-				AA90AE2417C362472838205A0D7021A5 /* Resources */,
+				8C8BC98D6FCA9611698AA28EE218C0E9 /* Headers */,
+				C480216C086FAF0BA3280090CFF684C6 /* Sources */,
+				E9D5CC417CB85C833A9A379AF44B748D /* Frameworks */,
+				22CCFE13186FC4928BDEF3387FCDC23C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C0206F5DB979A4804DEEA6E24D5B46F9 /* PBXTargetDependency */,
+				91B72C182E16EF002079B6B27D7A7712 /* PBXTargetDependency */,
+				37D7860F6F34E8415EFD8D6AC2294D63 /* PBXTargetDependency */,
 			);
 			name = "Pods-HotSeat";
 			productName = "Pods-HotSeat";
@@ -332,13 +382,14 @@
 			projectRoot = "";
 			targets = (
 				229B803E457543B09A6DB849CAAA61FE /* collection-view-layouts */,
-				548E18E6F788725078FCD610927A72ED /* Pods-HotSeat */,
+				0780714244EB54F6E26EDDEECF729EAD /* OpenTok */,
+				D8BA6D9D883B53883F59C4C9588240FE /* Pods-HotSeat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AA90AE2417C362472838205A0D7021A5 /* Resources */ = {
+		22CCFE13186FC4928BDEF3387FCDC23C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,14 +406,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		280C782298A3EF2578AF1E918680EA3B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1B37DFF5AEE00D00933964389498E3D9 /* Pods-HotSeat-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		593FDEC038A02929AF283136750404C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,59 +422,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C480216C086FAF0BA3280090CFF684C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DCFE8E9237EE3C4D06D8A6DC6261EB /* Pods-HotSeat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C0206F5DB979A4804DEEA6E24D5B46F9 /* PBXTargetDependency */ = {
+		37D7860F6F34E8415EFD8D6AC2294D63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "collection-view-layouts";
 			target = 229B803E457543B09A6DB849CAAA61FE /* collection-view-layouts */;
-			targetProxy = DD6C888E11430D79FD57B5F9BFE06A37 /* PBXContainerItemProxy */;
+			targetProxy = DBF5B3A086545C9299C0C9919248431C /* PBXContainerItemProxy */;
+		};
+		91B72C182E16EF002079B6B27D7A7712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenTok;
+			target = 0780714244EB54F6E26EDDEECF729EAD /* OpenTok */;
+			targetProxy = 26FBB0267AF50B3B19B66A0366B03D02 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1899DDAFF3055330F69EE50FC707E665 /* Debug */ = {
+		1DB239CC9DA142F5DE2F7D83BB794C9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF5ABBC692FB8A9E8EC139E535E3CA25 /* Pods-HotSeat.debug.xcconfig */;
+			baseConfigurationReference = 38117A740E82771DCC631CA61CA1DD5F /* OpenTok.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HotSeat/Pods-HotSeat-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HotSeat/Pods-HotSeat.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 		383279218A7B83655C5605A73985B3CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F8C13DE49711635BD7E3214C424DA1E /* collection-view-layouts.xcconfig */;
+			baseConfigurationReference = 2C42333DA8491B27ED5D8E7C04CD5839 /* collection-view-layouts.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -465,9 +500,86 @@
 			};
 			name = Release;
 		};
+		3F49E5887A3C11E42CB0081AE808D3E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 192F09B219B18C4BEA810ED16CB4DFF8 /* Pods-HotSeat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HotSeat/Pods-HotSeat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HotSeat/Pods-HotSeat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5224A4850252324AEA2126D7BE416D3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5ABBC692FB8A9E8EC139E535E3CA25 /* Pods-HotSeat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HotSeat/Pods-HotSeat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HotSeat/Pods-HotSeat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		78BEB9BF331451396BA2D38BE22DFAB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F8C13DE49711635BD7E3214C424DA1E /* collection-view-layouts.xcconfig */;
+			baseConfigurationReference = 2C42333DA8491B27ED5D8E7C04CD5839 /* collection-view-layouts.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -500,7 +612,7 @@
 			};
 			name = Debug;
 		};
-		84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */ = {
+		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -548,7 +660,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,46 +672,7 @@
 			};
 			name = Release;
 		};
-		9D30F97CEF9747CF5739622BD1C5F109 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 192F09B219B18C4BEA810ED16CB4DFF8 /* Pods-HotSeat.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HotSeat/Pods-HotSeat-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HotSeat/Pods-HotSeat.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */ = {
+		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -650,7 +723,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -663,14 +736,31 @@
 			};
 			name = Debug;
 		};
+		F709A1E7FC1CC4ECC478FF17B8B1BC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38117A740E82771DCC631CA61CA1DD5F /* OpenTok.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42E2029AC3A28A2DDCE085E6FAC3BD0A /* Build configuration list for PBXNativeTarget "Pods-HotSeat" */ = {
+		08B04A48A585BACC18468FDAEB18C30B /* Build configuration list for PBXAggregateTarget "OpenTok" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1899DDAFF3055330F69EE50FC707E665 /* Debug */,
-				9D30F97CEF9747CF5739622BD1C5F109 /* Release */,
+				1DB239CC9DA142F5DE2F7D83BB794C9B /* Debug */,
+				F709A1E7FC1CC4ECC478FF17B8B1BC7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -678,8 +768,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */,
-				84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */,
+				C1391485F05B41BD35738A433056B7FA /* Debug */,
+				A105C1752A0A49B30ED621B71E226CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -689,6 +779,15 @@
 			buildConfigurations = (
 				78BEB9BF331451396BA2D38BE22DFAB2 /* Debug */,
 				383279218A7B83655C5605A73985B3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A59C0C1D8D57D72683C7AFA8DB4986 /* Build configuration list for PBXNativeTarget "Pods-HotSeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5224A4850252324AEA2126D7BE416D3D /* Debug */,
+				3F49E5887A3C11E42CB0081AE808D3E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

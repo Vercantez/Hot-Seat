@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OpenTok
 
 class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     
@@ -16,10 +17,19 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     let chatDataSource = ChatViewDataSource()
     let cardsDataSource = CardsDataSource()
     
+    var openTokServiceClient: OpenTokSessionClient?
+    // Ideally should be obtained from server.
+    var kSessionId = "2_MX40NjI5NTQ5Mn5-MTU1MzczMDg3NjAxNH5uS0I0L0tXQWNPN0R1NjlPSy9iTUZmOUN-fg"
+    var kToken = "T1==cGFydG5lcl9pZD00NjI5NTQ5MiZzaWc9MDA1OWM1NzlhM2U2NzEyNjU4YWY2YmM3MDJiM2E3MDIzNTAwZmU0NzpzZXNzaW9uX2lkPTJfTVg0ME5qSTVOVFE1TW41LU1UVTFNemN6TURnM05qQXhOSDV1UzBJMEwwdFhRV05QTjBSMU5qbFBTeTlpVFVabU9VTi1mZyZjcmVhdGVfdGltZT0xNTUzNzg5ODI0Jm5vbmNlPTAuMjA2NjQ4MjI0OTAwNjI5NCZyb2xlPXB1Ymxpc2hlciZleHBpcmVfdGltZT0xNTU2MzgxODIyJmluaXRpYWxfbGF5b3V0X2NsYXNzX2xpc3Q9"
+    // end of keys
+    
     override var prefersStatusBarHidden: Bool { return true }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        openTokServiceClient = OpenTokSessionClient(sessionId: kSessionId, delegate: self)
+        openTokServiceClient?.doConnect(withToken: kToken)
         
         chatCollectionView.dataSource = self.chatDataSource
         
@@ -118,4 +128,64 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     }
     */
 
+}
+
+extension ChatRoomViewController: OTSessionDelegate {
+    func sessionDidConnect(_ session: OTSession) {
+        print("Session connected")
+        openTokServiceClient?.doPublish()
+        if let pubView = openTokServiceClient?.publisher.view {
+            //pubView.frame = daterVideoArea.bounds
+            //daterVideoArea.addSubview(pubView)
+        }
+        //reloadCollectionView()
+    }
+    
+    func sessionDidDisconnect(_ session: OTSession) {
+        print("Session disconnected")
+        //reloadCollectionView()
+    }
+    
+    func session(_ session: OTSession, streamCreated stream: OTStream) {
+        print("Session streamCreated: \(stream.streamId)")
+        openTokServiceClient?.doSubscribe(stream)
+        let subscriber = openTokServiceClient?.findSubscriber(byStreamId: stream.streamId)
+        //reloadCollectionView()
+    }
+    
+    func session(_ session: OTSession, streamDestroyed stream: OTStream) {
+        print("Session streamDestroyed: \(stream.streamId)")
+        openTokServiceClient?.cleanupSubscriber(stream)
+        //reloadCollectionView()
+    }
+    
+    func session(_ session: OTSession, didFailWithError error: OTError) {
+        print("session Failed to connect: \(error.localizedDescription)")
+    }
+}
+
+extension ChatRoomViewController: OTPublisherDelegate {
+    func publisher(_ publisher: OTPublisherKit, streamCreated stream: OTStream) {
+    }
+    
+    func publisher(_ publisher: OTPublisherKit, streamDestroyed stream: OTStream) {
+    }
+    
+    func publisher(_ publisher: OTPublisherKit, didFailWithError error: OTError) {
+        print("Publisher failed: \(error.localizedDescription)")
+    }
+}
+
+extension ChatRoomViewController: OTSubscriberDelegate {
+    func subscriberDidConnect(toStream subscriberKit: OTSubscriberKit) {
+        print("Subscriber connected")
+        //reloadCollectionView()
+    }
+    
+    func subscriber(_ subscriber: OTSubscriberKit, didFailWithError error: OTError) {
+        print("Subscriber failed: \(error.localizedDescription)")
+    }
+    
+    func subscriberVideoDataReceived(_ subscriber: OTSubscriber) {
+    }
 }

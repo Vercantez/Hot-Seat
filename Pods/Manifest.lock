@@ -14,6 +14,7 @@ PODS:
     - collection-view-layouts/Core
   - collection-view-layouts/TagsLayout (0.1.2):
     - collection-view-layouts/Core
+  - OpenTok (2.15.3)
 
 DEPENDENCIES:
   - collection-view-layouts/Core
@@ -24,14 +25,17 @@ DEPENDENCIES:
   - collection-view-layouts/PinterestLayout
   - collection-view-layouts/Px500Layout
   - collection-view-layouts/TagsLayout
+  - OpenTok
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - collection-view-layouts
+    - OpenTok
 
 SPEC CHECKSUMS:
   collection-view-layouts: f3da16bf3211ecb885bb3e45160c2267edf5b65e
+  OpenTok: fde03ecc5ea31fe0a453242847c4ee1f47e1d735
 
-PODFILE CHECKSUM: 9691bd0b66ef946be8104206973b59217ef70f1c
+PODFILE CHECKSUM: aee1c869521c503a6736fac9f6367a435e322430
 
 COCOAPODS: 1.6.1

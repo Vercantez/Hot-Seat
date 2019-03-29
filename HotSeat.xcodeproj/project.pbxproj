@@ -12,6 +12,9 @@
 		FD4376C7224D0EB200ED20B5 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4376C6224D0EB200ED20B5 /* ChatRoomViewController.swift */; };
 		FD4376CB224D33AA00ED20B5 /* ChatViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4376CA224D33AA00ED20B5 /* ChatViewDataSource.swift */; };
 		FD4376CD224D4E4300ED20B5 /* CardsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4376CC224D4E4300ED20B5 /* CardsDataSource.swift */; };
+		FD4376CF224D848B00ED20B5 /* OpenTokSessionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4376CE224D848B00ED20B5 /* OpenTokSessionClient.swift */; };
+		FD4376D3224D84A100ED20B5 /* SubscriberCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4376D1224D84A100ED20B5 /* SubscriberCollectionCell.swift */; };
+		FD4376D4224D84A100ED20B5 /* SubscriberCollectionCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4376D2224D84A100ED20B5 /* SubscriberCollectionCellView.xib */; };
 		FD7F7AD6224C391A005CF0FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */; };
 		FD7F7ADD224C391A005CF0FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F7ADB224C391A005CF0FC /* Main.storyboard */; };
 		FD7F7ADF224C391C005CF0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7F7ADE224C391C005CF0FC /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 		FD4376C6224D0EB200ED20B5 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		FD4376CA224D33AA00ED20B5 /* ChatViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewDataSource.swift; sourceTree = "<group>"; };
 		FD4376CC224D4E4300ED20B5 /* CardsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataSource.swift; sourceTree = "<group>"; };
+		FD4376CE224D848B00ED20B5 /* OpenTokSessionClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenTokSessionClient.swift; sourceTree = "<group>"; };
+		FD4376D1224D84A100ED20B5 /* SubscriberCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriberCollectionCell.swift; sourceTree = "<group>"; };
+		FD4376D2224D84A100ED20B5 /* SubscriberCollectionCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubscriberCollectionCellView.xib; sourceTree = "<group>"; };
 		FD7F7AD2224C391A005CF0FC /* HotSeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotSeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD7F7ADC224C391A005CF0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,6 +73,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FD4376D0224D84A100ED20B5 /* SubscriberViewUIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FD4376D1224D84A100ED20B5 /* SubscriberCollectionCell.swift */,
+				FD4376D2224D84A100ED20B5 /* SubscriberCollectionCellView.xib */,
+			);
+			path = SubscriberViewUIComponents;
+			sourceTree = "<group>";
+		};
 		FD7F7AC9224C391A005CF0FC = {
 			isa = PBXGroup;
 			children = (
@@ -88,8 +103,10 @@
 		FD7F7AD4224C391A005CF0FC /* HotSeat */ = {
 			isa = PBXGroup;
 			children = (
+				FD4376CE224D848B00ED20B5 /* OpenTokSessionClient.swift */,
 				FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */,
 				FD7F7AE9224CE730005CF0FC /* DiscoverCollectionViewController.swift */,
+				FD4376D0224D84A100ED20B5 /* SubscriberViewUIComponents */,
 				FD7F7AEB224CE766005CF0FC /* DiscoverDataSource.swift */,
 				FD4376C4224D030A00ED20B5 /* DiscoverRoomCollectionViewCell.swift */,
 				FD4376C6224D0EB200ED20B5 /* ChatRoomViewController.swift */,
@@ -163,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4376D4224D84A100ED20B5 /* SubscriberCollectionCellView.xib in Resources */,
 				FD7F7AE2224C391C005CF0FC /* LaunchScreen.storyboard in Resources */,
 				FD7F7ADF224C391C005CF0FC /* Assets.xcassets in Resources */,
 				FD7F7ADD224C391A005CF0FC /* Main.storyboard in Resources */,
@@ -223,12 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4376CF224D848B00ED20B5 /* OpenTokSessionClient.swift in Sources */,
 				FD4376CD224D4E4300ED20B5 /* CardsDataSource.swift in Sources */,
 				FD7F7AEC224CE766005CF0FC /* DiscoverDataSource.swift in Sources */,
 				FD7F7AD6224C391A005CF0FC /* AppDelegate.swift in Sources */,
 				FD4376C7224D0EB200ED20B5 /* ChatRoomViewController.swift in Sources */,
 				FD4376C5224D030A00ED20B5 /* DiscoverRoomCollectionViewCell.swift in Sources */,
 				FD7F7AEA224CE730005CF0FC /* DiscoverCollectionViewController.swift in Sources */,
+				FD4376D3224D84A100ED20B5 /* SubscriberCollectionCell.swift in Sources */,
 				FD4376CB224D33AA00ED20B5 /* ChatViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
