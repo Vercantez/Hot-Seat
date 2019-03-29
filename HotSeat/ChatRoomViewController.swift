@@ -128,12 +128,12 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
         chatTextField.resignFirstResponder()
         let cardview = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex, section: 0))!
         UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseInOut, animations: {
-//            cardview.frame.origin.x -= (cardview.frame.width) + 50
-//            cardview.transform = CGAffineTransform(rotationAngle: (-3.14159/18.0))
+            cardview.frame.origin.x -= (cardview.frame.width) + 50
+            cardview.transform = CGAffineTransform(rotationAngle: (-3.14159/18.0))
 
         }) { (finished) in
-//            self.cardsCollectionView.scrollToItem(at: IndexPath(item: self.currentIndex + 1, section: 0), at: .centeredHorizontally, animated: true)
-//            self.currentIndex += 1
+            self.cardsCollectionView.scrollToItem(at: IndexPath(item: self.currentIndex + 1, section: 0), at: .centeredHorizontally, animated: true)
+            self.currentIndex += 1
             
             // Use UIBezierPath as an easy way to create the CGPath for the layer.
             // The path should be the entire circle.
