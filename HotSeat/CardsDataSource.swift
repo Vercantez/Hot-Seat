@@ -23,7 +23,7 @@ class CardsDataSource: NSObject, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        cell.backgroundColor = .green
+        cell.backgroundColor = .gray
         if let streamView = cards[indexPath.row]?.view {
             streamView.frame = cell.bounds
             let overlayimg = UIImage(named: "Streamoverlay-Rahim")
@@ -31,6 +31,14 @@ class CardsDataSource: NSObject, UICollectionViewDataSource {
             overlayview.frame = cell.bounds
             streamView.addSubview(overlayview)
             cell.addSubview(streamView)
+        } else {
+            // dummy card
+            let index = indexPath.item % 4
+            let dummyCardImageName = "profile0" + String(index)
+            let dummyCard = UIImage(named: dummyCardImageName)
+            let dummyCardView = UIImageView(image: dummyCard)
+            dummyCardView.frame = cell.bounds
+            cell.addSubview(dummyCardView)
         }
         return cell
     }
