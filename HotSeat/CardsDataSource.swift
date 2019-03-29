@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import OpenTok
 
 class CardsDataSource: NSObject, UICollectionViewDataSource {
-    var cards: [String] = []
+    var cards: [OTSubscriber?] = []
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -23,6 +24,10 @@ class CardsDataSource: NSObject, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         cell.backgroundColor = .green
+        if let streamView = cards[indexPath.row]?.view {
+            streamView.frame = cell.bounds
+            cell.addSubview(streamView)
+        }
         return cell
     }
     

@@ -144,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZA9-Gk-Rws">
-                                <rect key="frame" x="0.0" y="246" width="375" height="410"/>
+                                <rect key="frame" x="0.0" y="300" width="375" height="356"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="khR-Ke-WPd">
                                     <size key="itemSize" width="332" height="394"/>
@@ -154,7 +154,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="OP7-PR-edN">
-                                        <rect key="frame" x="20" y="8" width="332" height="394"/>
+                                        <rect key="frame" x="20" y="-19" width="332" height="394"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="332" height="394"/>
@@ -276,6 +276,13 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iC3-8A-Yhm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="ocP-qa-k4G"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -286,12 +293,15 @@
                             <constraint firstItem="5Zz-HY-mbx" firstAttribute="top" secondItem="ZA9-Gk-Rws" secondAttribute="bottom" constant="8" id="Epk-hs-J3S"/>
                             <constraint firstAttribute="trailing" secondItem="PrS-LO-sXd" secondAttribute="trailing" id="FQU-B6-rG9"/>
                             <constraint firstItem="5Zz-HY-mbx" firstAttribute="trailing" secondItem="hCz-sw-51V" secondAttribute="trailing" id="Gfu-2v-3s1"/>
+                            <constraint firstItem="iC3-8A-Yhm" firstAttribute="trailing" secondItem="hCz-sw-51V" secondAttribute="trailing" id="JQ2-rP-FWu"/>
                             <constraint firstItem="hCz-sw-51V" firstAttribute="bottom" secondItem="5Zz-HY-mbx" secondAttribute="bottom" constant="50" id="K2s-Kx-OZx"/>
+                            <constraint firstItem="iC3-8A-Yhm" firstAttribute="top" secondItem="9g3-vL-nF7" secondAttribute="top" id="Mb8-bE-eT8"/>
                             <constraint firstItem="hCz-sw-51V" firstAttribute="trailing" secondItem="A3d-wc-Cmk" secondAttribute="trailing" constant="152" id="Y8N-Lp-LHV"/>
                             <constraint firstItem="PrS-LO-sXd" firstAttribute="leading" secondItem="9g3-vL-nF7" secondAttribute="leading" id="ZdU-ho-uCf"/>
-                            <constraint firstItem="ZA9-Gk-Rws" firstAttribute="top" secondItem="hCz-sw-51V" secondAttribute="top" constant="202" id="cub-jg-cIj"/>
+                            <constraint firstItem="iC3-8A-Yhm" firstAttribute="leading" secondItem="hCz-sw-51V" secondAttribute="leading" id="cmx-OU-QQp"/>
                             <constraint firstItem="ZA9-Gk-Rws" firstAttribute="leading" secondItem="hCz-sw-51V" secondAttribute="leading" id="jUX-UA-sUY"/>
                             <constraint firstItem="5Zz-HY-mbx" firstAttribute="leading" secondItem="hCz-sw-51V" secondAttribute="leading" id="nCu-I9-TUo"/>
+                            <constraint firstItem="ZA9-Gk-Rws" firstAttribute="top" secondItem="iC3-8A-Yhm" secondAttribute="bottom" constant="20" id="ndO-h6-Qzl"/>
                             <constraint firstAttribute="bottom" secondItem="PrS-LO-sXd" secondAttribute="bottom" id="rPA-9e-YxJ"/>
                             <constraint firstItem="ZA9-Gk-Rws" firstAttribute="trailing" secondItem="hCz-sw-51V" secondAttribute="trailing" id="xxu-39-Icl"/>
                         </constraints>
@@ -306,6 +316,7 @@
                         <outlet property="cardsCollectionView" destination="ZA9-Gk-Rws" id="GKP-w8-nqS"/>
                         <outlet property="chatCollectionView" destination="A3d-wc-Cmk" id="SV0-2P-Cke"/>
                         <outlet property="chatTextField" destination="VQp-iZ-QxR" id="oHe-XT-5Ug"/>
+                        <outlet property="daterView" destination="iC3-8A-Yhm" id="GMe-Zu-5Lz"/>
                         <outlet property="inputBarBottomConstraint" destination="K2s-Kx-OZx" id="Z5a-Pe-LeF"/>
                     </connections>
                 </viewController>

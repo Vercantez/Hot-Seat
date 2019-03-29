@@ -57,8 +57,8 @@ class OpenTokSessionClient {
     }
     
     func cleanupSubscriber(_ stream: OTStream) {
-        let (index, _) = findSubscriber(byStreamId: stream.streamId)!
-        subscribers.removeValue(forKey: index)
+        //let (index, _) = findSubscriber(byStreamId: stream.streamId)!
+        //subscribers.removeValue(forKey: index)
     }
     
     func findSubscriber(byStreamId id: String) -> (IndexPath, OTSubscriber)? {
