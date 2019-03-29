@@ -14,6 +14,9 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet var chatCollectionView: UICollectionView!
     @IBOutlet var cardsCollectionView: UICollectionView!
     @IBOutlet var daterView: UIView!
+    @IBOutlet weak var passButton: UIButton!
+    @IBOutlet weak var likeButton: UIButton!
+    
     let chatDataSource = ChatViewDataSource()
     let cardsDataSource = CardsDataSource()
     
@@ -126,9 +129,15 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     
     var currentIndex = 0
     @IBAction func tap() {
-        //openTokServiceClient?.sendSignal(withType: "right")
-        animate("")
+        openTokServiceClient?.sendSignal(withType: "right")
+        animate("right")
     }
+    
+    @IBAction func likeButtonPressed(_ sender: Any) {
+        openTokServiceClient?.sendSignal(withType: "left")
+        animate("left")
+    }
+    
     
 
     func animate(_ direction: String) {
