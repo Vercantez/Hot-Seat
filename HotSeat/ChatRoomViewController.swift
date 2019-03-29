@@ -17,6 +17,8 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     let chatDataSource = ChatViewDataSource()
     let cardsDataSource = CardsDataSource()
     
+    let USER_NAME = "SHAR" //change to RAHIM
+    
     var openTokServiceClient: OpenTokSessionClient?
     // Ideally should be obtained from server.
     var kSessionId = "2_MX40NjI5NTQ5Mn5-MTU1MzczMDg3NjAxNH5uS0I0L0tXQWNPN0R1NjlPSy9iTUZmOUN-fg"
@@ -292,12 +294,13 @@ extension ChatRoomViewController: OTSessionDelegate {
     }
     
     func session(_ session: OTSession, receivedSignalType type: String?, from connection: OTConnection?, with string: String?) {
+        if USER_NAME == "SHAR" {
+            return
+        }
         guard let t = type else {
             return
         }
         animate(t)
-//            openTokServiceClient?.publisher.publishVideo = false
-//            openTokServiceClient?.publisher.publishAudio = false
     }
 }
 
