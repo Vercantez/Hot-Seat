@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8846D074CECA2B6835238FF7 /* Pods_HotSeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B64756C993C189541D5A05F /* Pods_HotSeat.framework */; };
-		FD4376C5224D030A00ED20B5 /* DiscoverRoomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4376C4224D030A00ED20B5 /* DiscoverRoomCollectionViewCell.swift */; };
 		FD4376C7224D0EB200ED20B5 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4376C6224D0EB200ED20B5 /* ChatRoomViewController.swift */; };
 		FD4376CB224D33AA00ED20B5 /* ChatViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4376CA224D33AA00ED20B5 /* ChatViewDataSource.swift */; };
 		FD4376CD224D4E4300ED20B5 /* CardsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4376CC224D4E4300ED20B5 /* CardsDataSource.swift */; };
@@ -19,15 +18,12 @@
 		FD7F7ADD224C391A005CF0FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F7ADB224C391A005CF0FC /* Main.storyboard */; };
 		FD7F7ADF224C391C005CF0FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7F7ADE224C391C005CF0FC /* Assets.xcassets */; };
 		FD7F7AE2224C391C005CF0FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7F7AE0224C391C005CF0FC /* LaunchScreen.storyboard */; };
-		FD7F7AEA224CE730005CF0FC /* DiscoverCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AE9224CE730005CF0FC /* DiscoverCollectionViewController.swift */; };
-		FD7F7AEC224CE766005CF0FC /* DiscoverDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7F7AEB224CE766005CF0FC /* DiscoverDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4182C8EA29F5B36724D800DE /* Pods-HotSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSeat.debug.xcconfig"; path = "Target Support Files/Pods-HotSeat/Pods-HotSeat.debug.xcconfig"; sourceTree = "<group>"; };
-		77E3958F6F16CD729021E459 /* Pods-HotSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSeat.release.xcconfig"; path = "Target Support Files/Pods-HotSeat/Pods-HotSeat.release.xcconfig"; sourceTree = "<group>"; };
+		2BCEAADA96D80318659FFD0A /* Pods-HotSeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSeat.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotSeat/Pods-HotSeat.release.xcconfig"; sourceTree = "<group>"; };
 		9B64756C993C189541D5A05F /* Pods_HotSeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotSeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD4376C4224D030A00ED20B5 /* DiscoverRoomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverRoomCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1DCDA114315B8F19422033F /* Pods-HotSeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotSeat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HotSeat/Pods-HotSeat.debug.xcconfig"; sourceTree = "<group>"; };
 		FD4376C6224D0EB200ED20B5 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		FD4376CA224D33AA00ED20B5 /* ChatViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewDataSource.swift; sourceTree = "<group>"; };
 		FD4376CC224D4E4300ED20B5 /* CardsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsDataSource.swift; sourceTree = "<group>"; };
@@ -40,8 +36,6 @@
 		FD7F7ADE224C391C005CF0FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD7F7AE1224C391C005CF0FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD7F7AE3224C391C005CF0FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD7F7AE9224CE730005CF0FC /* DiscoverCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionViewController.swift; sourceTree = "<group>"; };
-		FD7F7AEB224CE766005CF0FC /* DiscoverDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,13 +58,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B09CC9AE286CDF45B29C411F /* Pods */ = {
+		42974F13715A303AF1B4EF10 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4182C8EA29F5B36724D800DE /* Pods-HotSeat.debug.xcconfig */,
-				77E3958F6F16CD729021E459 /* Pods-HotSeat.release.xcconfig */,
+				E1DCDA114315B8F19422033F /* Pods-HotSeat.debug.xcconfig */,
+				2BCEAADA96D80318659FFD0A /* Pods-HotSeat.release.xcconfig */,
 			);
-			path = Pods;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		FD4376D0224D84A100ED20B5 /* SubscriberViewUIComponents */ = {
@@ -87,8 +81,8 @@
 			children = (
 				FD7F7AD4224C391A005CF0FC /* HotSeat */,
 				FD7F7AD3224C391A005CF0FC /* Products */,
-				B09CC9AE286CDF45B29C411F /* Pods */,
 				363C40E309FF418D2DDEF194 /* Frameworks */,
+				42974F13715A303AF1B4EF10 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,10 +99,7 @@
 			children = (
 				FD4376CE224D848B00ED20B5 /* OpenTokSessionClient.swift */,
 				FD7F7AD5224C391A005CF0FC /* AppDelegate.swift */,
-				FD7F7AE9224CE730005CF0FC /* DiscoverCollectionViewController.swift */,
 				FD4376D0224D84A100ED20B5 /* SubscriberViewUIComponents */,
-				FD7F7AEB224CE766005CF0FC /* DiscoverDataSource.swift */,
-				FD4376C4224D030A00ED20B5 /* DiscoverRoomCollectionViewCell.swift */,
 				FD4376C6224D0EB200ED20B5 /* ChatRoomViewController.swift */,
 				FD4376CA224D33AA00ED20B5 /* ChatViewDataSource.swift */,
 				FD4376CC224D4E4300ED20B5 /* CardsDataSource.swift */,
@@ -131,7 +122,6 @@
 				FD7F7ACE224C391A005CF0FC /* Sources */,
 				FD7F7ACF224C391A005CF0FC /* Frameworks */,
 				FD7F7AD0224C391A005CF0FC /* Resources */,
-				69CF3C4D3BD71785E1EF1844 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,43 +185,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HotSeat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		69CF3C4D3BD71785E1EF1844 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HotSeat/Pods-HotSeat-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/collection-view-layouts/collection_view_layouts.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/collection_view_layouts.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HotSeat/Pods-HotSeat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -243,11 +207,8 @@
 			files = (
 				FD4376CF224D848B00ED20B5 /* OpenTokSessionClient.swift in Sources */,
 				FD4376CD224D4E4300ED20B5 /* CardsDataSource.swift in Sources */,
-				FD7F7AEC224CE766005CF0FC /* DiscoverDataSource.swift in Sources */,
 				FD7F7AD6224C391A005CF0FC /* AppDelegate.swift in Sources */,
 				FD4376C7224D0EB200ED20B5 /* ChatRoomViewController.swift in Sources */,
-				FD4376C5224D030A00ED20B5 /* DiscoverRoomCollectionViewCell.swift in Sources */,
-				FD7F7AEA224CE730005CF0FC /* DiscoverCollectionViewController.swift in Sources */,
 				FD4376D3224D84A100ED20B5 /* SubscriberCollectionCell.swift in Sources */,
 				FD4376CB224D33AA00ED20B5 /* ChatViewDataSource.swift in Sources */,
 			);
@@ -326,13 +287,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -381,26 +343,27 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		FD7F7AE7224C391C005CF0FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4182C8EA29F5B36724D800DE /* Pods-HotSeat.debug.xcconfig */;
+			baseConfigurationReference = E1DCDA114315B8F19422033F /* Pods-HotSeat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79MDW22ZFZ;
 				INFOPLIST_FILE = HotSeat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,21 +371,21 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Miguel-Salinas.HotSeat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		FD7F7AE8224C391C005CF0FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77E3958F6F16CD729021E459 /* Pods-HotSeat.release.xcconfig */;
+			baseConfigurationReference = 2BCEAADA96D80318659FFD0A /* Pods-HotSeat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79MDW22ZFZ;
 				INFOPLIST_FILE = HotSeat/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,7 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Miguel-Salinas.HotSeat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -1,41 +1,16 @@
 PODS:
-  - collection-view-layouts/Core (0.1.2)
-  - collection-view-layouts/FacebookLayout (0.1.2):
-    - collection-view-layouts/Core
-  - collection-view-layouts/FlickrLayout (0.1.2):
-    - collection-view-layouts/Core
-  - collection-view-layouts/FlipboardLayout (0.1.2):
-    - collection-view-layouts/Core
-  - collection-view-layouts/InstagramLayout (0.1.2):
-    - collection-view-layouts/Core
-  - collection-view-layouts/PinterestLayout (0.1.2):
-    - collection-view-layouts/Core
-  - collection-view-layouts/Px500Layout (0.1.2):
-    - collection-view-layouts/Core
-  - collection-view-layouts/TagsLayout (0.1.2):
-    - collection-view-layouts/Core
-  - OpenTok (2.15.3)
+  - OpenTok (2.15.1)
 
 DEPENDENCIES:
-  - collection-view-layouts/Core
-  - collection-view-layouts/FacebookLayout
-  - collection-view-layouts/FlickrLayout
-  - collection-view-layouts/FlipboardLayout
-  - collection-view-layouts/InstagramLayout
-  - collection-view-layouts/PinterestLayout
-  - collection-view-layouts/Px500Layout
-  - collection-view-layouts/TagsLayout
   - OpenTok
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - collection-view-layouts
     - OpenTok
 
 SPEC CHECKSUMS:
-  collection-view-layouts: f3da16bf3211ecb885bb3e45160c2267edf5b65e
-  OpenTok: fde03ecc5ea31fe0a453242847c4ee1f47e1d735
+  OpenTok: 69c72cd0392c2277e62603723564e1f70a0f3fa8
 
-PODFILE CHECKSUM: aee1c869521c503a6736fac9f6367a435e322430
+PODFILE CHECKSUM: 819139ab84cea3bd02cb905d03d3b8466785b3ca
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.5.3

@@ -72,7 +72,7 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
         // let point be current point + half of card width / card width all times card width
         let currentWidth = offset.x
         let index = Int((currentWidth + CGFloat(cardWidth/2))/CGFloat(cardWidth))
-        let newPoint = CGPoint(x: CGFloat(index * cardWidth), y: CGFloat.zero)
+        let newPoint = CGPoint(x: CGFloat(index * cardWidth), y: CGFloat(integerLiteral: 0))
         return newPoint
     }
     
