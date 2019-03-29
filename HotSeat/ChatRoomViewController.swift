@@ -13,7 +13,6 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     
     @IBOutlet var chatCollectionView: UICollectionView!
     @IBOutlet var cardsCollectionView: UICollectionView!
-    @IBOutlet var chatTextField: UITextField!
     @IBOutlet var daterView: UIView!
     let chatDataSource = ChatViewDataSource()
     let cardsDataSource = CardsDataSource()
@@ -125,7 +124,6 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     
     var currentIndex = 0
     @IBAction func tap() {
-        chatTextField.resignFirstResponder()
         let cardview = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex, section: 0))! as! SubscriberCollectionCell
         let nextCardView = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex + 1, section: 0))! as! SubscriberCollectionCell
         UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseInOut, animations: {
