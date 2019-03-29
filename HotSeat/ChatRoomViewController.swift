@@ -124,12 +124,19 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
     
     var currentIndex = 0
     @IBAction func tap() {
-        let cardview = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex, section: 0))! as! SubscriberCollectionCell
+        openTokServiceClient?.sendSignal(withType: "right")
+        animate("")
+    }
+    
+
+    func animate(_ direction: String) {
+//        let cardview = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex, section: 0))!
         let nextCardView = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex + 1, section: 0))! as! SubscriberCollectionCell
+        let cardview = self.cardsCollectionView.cellForItem(at: IndexPath(item: self.currentIndex, section: 0))! as! SubscriberCollectionCell
         UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseInOut, animations: {
             cardview.frame.origin.x -= (cardview.frame.width) + 50
             cardview.transform = CGAffineTransform(rotationAngle: (-3.14159/18.0))
-
+            
         }) { (finished) in
             self.cardsCollectionView.scrollToItem(at: IndexPath(item: self.currentIndex + 1, section: 0), at: .centeredHorizontally, animated: true)
             self.currentIndex += 1
@@ -172,16 +179,13 @@ class ChatRoomViewController: UIViewController, UICollectionViewDelegate {
             
             // Do the actual animation
             circleLayer.add(animation, forKey: "animateCircle")
-
-
-
+            
+            
+            
             //self.cardsDataSource.cards.removeFirst()
             //self.cardsCollectionView.deleteItems(at: [IndexPath(item: 0, section: 0)])
         }
-
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -230,11 +234,12 @@ extension ChatRoomViewController: OTSessionDelegate {
     }
     
     func session(_ session: OTSession, receivedSignalType type: String?, from connection: OTConnection?, with string: String?) {
-        if type == "right" {
-            // swipe right
-        } else {
-            // swipe left
+        guard let t = type else {
+            return
         }
+        animate(t)
+//            openTokServiceClient?.publisher.publishVideo = false
+//            openTokServiceClient?.publisher.publishAudio = false
     }
 }
 
